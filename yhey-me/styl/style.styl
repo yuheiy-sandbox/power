@@ -1,0 +1,32 @@
+@import '../node_modules/sanitize.css/sanitize.styl'
+
+color-default = #999
+color-focus = #444
+
+:root
+  @media (min-width: 60rem)
+    font-size 125%
+
+  @media (min-width: 90rem)
+    font-size 150%
+
+html
+  overflow-y auto
+
+body
+  position relative
+  font-family 'Junge', 'Georgia', serif
+  color color-default
+
+a
+  color inherit
+  text-decoration underline
+  transition color .6s
+
+  &:hover
+    color color-focus
+
+@import '_layout'
+@import '_title'
+@import '_list'
+@import '_future'
